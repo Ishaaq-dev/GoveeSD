@@ -1,7 +1,7 @@
 .DS_Store
 .idea/**
 /src/DistributionTool
-com.ishaaq_dev.streamDeckPlugin
+com.ishaaq_dev.govee.streamDeckPlugin
 .vscode/**
 package.json
 package-lock.json
