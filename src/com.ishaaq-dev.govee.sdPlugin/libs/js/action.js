@@ -42,7 +42,7 @@ class ELGSDAction {
 		if (!fn) {
 			console.error('A callback function for the keyDown event is required for onKeyDown.');
 		}
-
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.keyDown}`, (jsn) => fn(jsn));
 		return this;
 	}
@@ -55,7 +55,7 @@ class ELGSDAction {
 		if (!fn) {
 			console.error('A callback function for the keyUp event is required for onKeyUp.');
 		}
-
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.keyUp}`, (jsn) => fn(jsn));
 		return this;
 	}
@@ -156,6 +156,7 @@ class ELGSDAction {
 		if (!fn) {
 			console.error('A callback function for the onDialRotate event is required for onDialRotate.');
 		}
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.dialRotate}`, (jsn) => fn(jsn));
 		return this;
 	}
@@ -180,6 +181,7 @@ class ELGSDAction {
 		if (!fn) {
 			console.error('A callback function for the dialDown event is required for onDialDown.');
 		}
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.dialDown}`, (jsn) => fn(jsn));
 		return this;
 	}
@@ -192,6 +194,7 @@ class ELGSDAction {
 		if (!fn) {
 			console.error('A callback function for the dialUp event is required for onDialUp.');
 		}
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.dialUp}`, (jsn) => fn(jsn));
 		return this;
 	}
@@ -206,6 +209,7 @@ class ELGSDAction {
 				'A callback function for the onTouchTap event is required for onTouchTap.'
 			);
 		}
+		console.log('this seemed to work last time');
 		this.on(`${this.UUID}.${Events.touchTap}`, (jsn) => fn(jsn));
 		return this;
 	}
