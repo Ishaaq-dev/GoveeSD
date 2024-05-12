@@ -32,7 +32,7 @@
 				"TriggerDescription": {
 					"Rotate": "Adjust Brightness",
 					"Push": "Toggle Lights on/off",
-					"Touch": "Not Sure Yet",
+					"Touch": "Adjust Increment",
 					"LongTouch": "Set Brightness to random value"
 				}
 			},
@@ -54,7 +54,7 @@
 				"TriggerDescription": {
 					"Rotate": "Adjust Temperature",
 					"Push": "Toggle Lights on/off",
-					"Touch": "Not Sure Yet",
+					"Touch": "Adjust Increment",
 					"LongTouch": "Set Temperature to random value"
 				}
 			},
