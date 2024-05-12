@@ -42,7 +42,7 @@
 				}
 			],
 			"Tooltip": "This is an example tooltip",
-			"UUID": "com.ishaaq-dev.govee.action",
+			"UUID": "com.ishaaq-dev.govee.brightness",
 			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
 		},
 		{
@@ -64,7 +64,7 @@
 				}
 			],
 			"Tooltip": "This is an example tooltip",
-			"UUID": "com.ishaaq-dev.govee.action",
+			"UUID": "com.ishaaq-dev.govee.temperature",
 			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
 		}
 	]
