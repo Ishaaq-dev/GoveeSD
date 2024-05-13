@@ -8,9 +8,9 @@
           content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>com.ishaaq-dev.govee Property Inspector</title>
     <script src="js/sdpi.js"></script>
     <script src="js/govee-setup.js"></script>
-    <title>com.ishaaq-dev.govee Property Inspector</title>
     <link rel="stylesheet" href="../../../libs/css/sdpi.css" />
 </head>
 
@@ -19,8 +19,8 @@
         <div type="tabs" class="sdpi-item">
             <div class="sdpi-item-label empty"></div>
             <div class="tabs">
-                <div class="tab selected" data-target="#tab1" title="Show some inputs">Inputs</div>
-                <div class="tab" data-target="#tab2" title="Here's some text-areas">Text</div>
+                <div class="tab selected" data-target="#tab1" title="Adjustments">Inputs</div>
+                <div class="tab" data-target="#tab2" title="Setup Config">Setup</div>
             </div>
         </div>
         <hr class="tab-separator">
@@ -31,7 +31,7 @@
                     <input data-localize class="sdpi-item-value" name="name" type="text" value="" placeholder="Click Me" />
                 </div>
 
-                <div type="textarea" class="sdpi-item">
+                <!-- <div type="textarea" class="sdpi-item">
                     <div class="sdpi-item-label" data-localize title="My message">Message</div>
                     <div class="sdpi-item-value textarea">
                         <textarea
@@ -40,12 +40,15 @@
                                   maxlength="50"
                                   class="three-lines"></textarea>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div id="tab2" class="tab-container">
                 <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="More">More</div>
-                    <input data-localize class="sdpi-item-value" name="more" type="text" value="" placeholder="More info" />
+                    <div data-localize class="sdpi-item-label" title="apiKey">API Key</div>
+                    <input data-localize class="sdpi-item-value" name="more" type="text" value="" placeholder="Enter API Key" />
+                </div>
+                <div class="sdpi-item">
+                    <sdpi-select id="deviceId" property="deviceId" label="Device" refresh/>
                 </div>
             </div>
         </form>
@@ -75,6 +78,7 @@
 
     <!-- Property Inspector Source -->
     <script src="inspector.js"></script>
+    <govee-setup class="hidden"></govee-setup>
 </body>
 
 </html>
