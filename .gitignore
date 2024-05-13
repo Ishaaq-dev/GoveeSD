@@ -3,9 +3,9 @@
 /src/DistributionTool
 com.ishaaq-dev.govee.streamDeckPlugin
 .vscode/**
-package.json
-package-lock.json
 .history
 __exclude
 .editorconfig
 events
+
+node_modules
