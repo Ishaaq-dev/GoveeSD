@@ -7,5 +7,6 @@ com.ishaaq-dev.govee.streamDeckPlugin
 __exclude
 .editorconfig
 events
+.env
 
 node_modules
