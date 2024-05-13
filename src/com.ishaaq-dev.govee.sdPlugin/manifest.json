@@ -25,8 +25,8 @@
 	"Actions": [
 		{
 			"Icon": "images/Brightness/Action",
-			"Name": "Adjust Brightness",
-			"Controllers": ["Keypad", "Encoder"],
+			"Name": "Brightness",
+			"Controllers": ["Encoder"],
 			"Encoder": {
 				"layout": "$B1",
 				"TriggerDescription": {
@@ -38,7 +38,9 @@
 			},
 			"States": [
 				{
-					"Image": "actions/template/assets/action"
+					"FontSize": "12",
+					"Image": "images/Brightness/Key",
+					"TitleAlignment": "bottom"
 				}
 			],
 			"Tooltip": "This is an example tooltip",
@@ -47,8 +49,8 @@
 		},
 		{
 			"Icon": "images/ColorTemperature/Action",
-			"Name": "Adjust Temperature",
-			"Controllers": ["Keypad", "Encoder"],
+			"Name": "Temperature",
+			"Controllers": ["Encoder"],
 			"Encoder": {
 				"layout": "$B1",
 				"TriggerDescription": {
@@ -60,8 +62,10 @@
 			},
 			"States": [
 				{
-					"Image": "actions/template/assets/action"
-				}
+					"FontSize": "12",
+					"Image": "images/ColorTemperature/Key",
+					"TitleAlignment": "bottom"
+				  }
 			],
 			"Tooltip": "This is an example tooltip",
 			"UUID": "com.ishaaq-dev.govee.temperature",
