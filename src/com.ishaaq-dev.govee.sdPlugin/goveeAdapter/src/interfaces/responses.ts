@@ -1,6 +1,6 @@
 
 // instance can be an enum
-export interface Capability {
+interface Capability {
     type: String,
     instance: String,
     parameters: {}
