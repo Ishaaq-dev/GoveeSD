@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --log-level=error --write *",
     "build": "npx tsc index.ts --outDir dist",
-    "start": "npm run build && node ./dist/index.js"
+    "start": "ts-node index.ts",
+    "unit-test": "jest"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.23.3",
