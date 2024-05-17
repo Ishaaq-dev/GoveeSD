@@ -1,16 +1,18 @@
-import { getDeviceDetails } from "../devices";
-import * as devices from '../devices';
-import { getDevicesResponse } from "./data/devices";
+import { getDeviceDetails } from "../services/devices";
+import { getDevices } from "./data/devices";
+import { getDevice, DEVICE_ADDRESSES } from "./data/devices";
 
-const getDevicesRes = getDevicesResponse();
+describe("getDeviceDetails()", () => {
+  it("returns devices in the correct format", async () => {
+    const input = `xx:xx:xx:xx:XX:XX:XX:01`;
+    const deviceList = getDevices();
+    const expectedResponse = getDevice(DEVICE_ADDRESSES.BOOKSHELF_LAMP);
+    const response = await getDeviceDetails(input, deviceList);
 
-jest.mock('../devices', () => ({
-    ...jest.requireActual('../devices'),
-    getDevices: jest.fn().mockReturnValue(getDevicesRes)
-}));
+    if (!response) throw new Error("response is null when is should not be");
 
-describe('getDeviceDetails()', () => {
-    it('returns devices in the correct format', () => {
-
-    });
+    expect(response.sku).toEqual(expectedResponse.sku);
+    expect(response.deviceName).toEqual(expectedResponse.deviceName);
+    expect(response.device).toEqual(expectedResponse.device);
+  });
 });
