@@ -596,138 +596,138 @@ export function getDevice(deviceAddress: DEVICE_ADDRESSES): Device {
         deviceName: DEVICES.HEATER.name,
         type: DEVICES.HEATER.type,
         capabilities: [
-            {
-                "type": "devices.capabilities.on_off",
-                "instance": "powerSwitch",
-                "parameters": {
-                    "dataType": "ENUM",
-                    "options": [
-                        {
-                            "name": "on",
-                            "value": 1
-                        },
-                        {
-                            "name": "off",
-                            "value": 0
-                        }
-                    ]
-                }
+          {
+            type: "devices.capabilities.on_off",
+            instance: "powerSwitch",
+            parameters: {
+              dataType: "ENUM",
+              options: [
+                {
+                  name: "on",
+                  value: 1,
+                },
+                {
+                  name: "off",
+                  value: 0,
+                },
+              ],
             },
-            {
-                "type": "devices.capabilities.temperature_setting",
-                "instance": "targetTemperature",
-                "parameters": {
-                    "dataType": "STRUCT",
-                    "fields": [
-                        {
-                            "fieldName": "autoStop",
-                            "defaultValue": 0,
-                            "dataType": "ENUM",
-                            "options": [
-                                {
-                                    "name": "Auto Stop",
-                                    "value": 1
-                                },
-                                {
-                                    "name": "Maintain",
-                                    "value": 0
-                                }
-                            ],
-                            "required": false
-                        },
-                        {
-                            "fieldName": "temperature",
-                            "dataType": "INTEGER",
-                            "range": {
-                                "min": 5,
-                                "max": 30,
-                                "precision": 1
-                            },
-                            "required": true
-                        },
-                        {
-                            "fieldName": "unit",
-                            "defaultValue": "Celsius",
-                            "dataType": "ENUM",
-                            "options": [
-                                {
-                                    "name": "Celsius",
-                                    "value": "Celsius"
-                                },
-                                {
-                                    "name": "Fahrenheit",
-                                    "value": "Fahrenheit"
-                                }
-                            ],
-                            "required": true
-                        }
-                    ]
-                }
+          },
+          {
+            type: "devices.capabilities.temperature_setting",
+            instance: "targetTemperature",
+            parameters: {
+              dataType: "STRUCT",
+              fields: [
+                {
+                  fieldName: "autoStop",
+                  defaultValue: 0,
+                  dataType: "ENUM",
+                  options: [
+                    {
+                      name: "Auto Stop",
+                      value: 1,
+                    },
+                    {
+                      name: "Maintain",
+                      value: 0,
+                    },
+                  ],
+                  required: false,
+                },
+                {
+                  fieldName: "temperature",
+                  dataType: "INTEGER",
+                  range: {
+                    min: 5,
+                    max: 30,
+                    precision: 1,
+                  },
+                  required: true,
+                },
+                {
+                  fieldName: "unit",
+                  defaultValue: "Celsius",
+                  dataType: "ENUM",
+                  options: [
+                    {
+                      name: "Celsius",
+                      value: "Celsius",
+                    },
+                    {
+                      name: "Fahrenheit",
+                      value: "Fahrenheit",
+                    },
+                  ],
+                  required: true,
+                },
+              ],
             },
-            {
-                "type": "devices.capabilities.property",
-                "instance": "sensorTemperature"
-            },
-            {
-                "type": "devices.capabilities.work_mode",
-                "instance": "workMode",
-                "parameters": {
-                    "dataType": "STRUCT",
-                    "fields": [
+          },
+          {
+            type: "devices.capabilities.property",
+            instance: "sensorTemperature",
+          },
+          {
+            type: "devices.capabilities.work_mode",
+            instance: "workMode",
+            parameters: {
+              dataType: "STRUCT",
+              fields: [
+                {
+                  fieldName: "workMode",
+                  dataType: "ENUM",
+                  options: [
+                    {
+                      name: "gearMode",
+                      value: 1,
+                    },
+                    {
+                      name: "Fan",
+                      value: 9,
+                    },
+                    {
+                      name: "Auto",
+                      value: 3,
+                    },
+                  ],
+                  required: true,
+                },
+                {
+                  fieldName: "modeValue",
+                  dataType: "ENUM",
+                  options: [
+                    {
+                      name: "gearMode",
+                      options: [
                         {
-                            "fieldName": "workMode",
-                            "dataType": "ENUM",
-                            "options": [
-                                {
-                                    "name": "gearMode",
-                                    "value": 1
-                                },
-                                {
-                                    "name": "Fan",
-                                    "value": 9
-                                },
-                                {
-                                    "name": "Auto",
-                                    "value": 3
-                                }
-                            ],
-                            "required": true
+                          name: "Low",
+                          value: 1,
                         },
                         {
-                            "fieldName": "modeValue",
-                            "dataType": "ENUM",
-                            "options": [
-                                {
-                                    "name": "gearMode",
-                                    "options": [
-                                        {
-                                            "name": "Low",
-                                            "value": 1
-                                        },
-                                        {
-                                            "name": "Medium",
-                                            "value": 2
-                                        },
-                                        {
-                                            "name": "High",
-                                            "value": 3
-                                        }
-                                    ]
-                                },
-                                {
-                                    "defaultValue": 0,
-                                    "name": "Fan"
-                                },
-                                {
-                                    "defaultValue": 22,
-                                    "name": "Auto"
-                                }
-                            ],
-                            "required": true
-                        }
-                    ]
-                }
-            }
+                          name: "Medium",
+                          value: 2,
+                        },
+                        {
+                          name: "High",
+                          value: 3,
+                        },
+                      ],
+                    },
+                    {
+                      defaultValue: 0,
+                      name: "Fan",
+                    },
+                    {
+                      defaultValue: 22,
+                      name: "Auto",
+                    },
+                  ],
+                  required: true,
+                },
+              ],
+            },
+          },
         ],
       };
     default:
@@ -748,5 +748,5 @@ export function getDevicesResponse() {
 }
 
 export function getDevices() {
-    return getDevicesResponse().data;
+  return getDevicesResponse().data;
 }
