@@ -1,6 +1,6 @@
 import axiosClient from "./axios/axios";
 import { URLS } from "../constants";
-import { GoveeDevices } from "./interfaces/receiving";
+import { GoveeDevices } from "./interfaces/responses";
 
 export async function getDevices() {
     const response = await axiosClient.get<GoveeDevices>(URLS.GET.DEVICES);
