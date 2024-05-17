@@ -3,7 +3,10 @@
   "description": "Project to interact with Govee API",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "npx tsc index.ts --outDir dist",
+    "start": "npm run build && node ./dist/index.js"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.23.3",
     "@jest/globals": "^29.7.0",
