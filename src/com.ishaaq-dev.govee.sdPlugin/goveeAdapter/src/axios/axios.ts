@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { URLS } from '../constants';
+import { URLS } from '../../constants';
 import * as dotenv from 'dotenv'
 dotenv.config()
 

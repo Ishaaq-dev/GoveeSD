@@ -1,5 +1,5 @@
-import axiosClient from "./axios";
+import axiosClient from "./axios/axios";
 
 export function setBrightness(amount: number){
-
+    
 }
