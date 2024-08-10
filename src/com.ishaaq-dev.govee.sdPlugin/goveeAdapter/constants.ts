@@ -11,3 +11,7 @@ export const URLS = {
     DEVICE_CONTROL: `${V1}/device/scenes`,
   },
 };
+
+export const CAPABILITY = {
+  TOGGLE_ON_OFF: 'on_off'
+}
