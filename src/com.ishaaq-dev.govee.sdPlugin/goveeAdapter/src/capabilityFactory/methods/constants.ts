@@ -1,6 +1,6 @@
 export const CAPABILITIES = {
     TOGGLE_ON_OFF: createCapability('devices.capabilities.on_off', 'powerSwitch'),
-    SET_BRIGHTNESS: createCapability('devices.capabilities.range','brightness')
+    SET_BRIGHTNESS: createCapability('devices.capabilities.range', 'brightness')
 }
 
 function createCapability(type: string, instance: string) {
