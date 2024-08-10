@@ -1,20 +1,20 @@
 // instance can be an enum
 interface Capability {
-  type: String;
-  instance: String;
+  type: string;
+  instance: string;
   parameters?: {};
 }
 
 export interface Device {
-  sku: String;
-  device: String;
-  deviceName: String;
-  type: String;
+  sku: string;
+  device: string;
+  deviceName: string;
+  type: string;
   capabilities: Capability[];
 }
 
 export interface GoveeDevices {
   code: Number;
-  message: String;
+  message: string;
   data: Device[];
 }
