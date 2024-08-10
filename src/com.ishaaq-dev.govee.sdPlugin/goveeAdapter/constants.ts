@@ -13,5 +13,6 @@ export const URLS = {
 };
 
 export const CAPABILITY = {
-  TOGGLE_ON_OFF: 'on_off'
+  TOGGLE_ON_OFF: 'on_off',
+  SET_BRIGHTNESS: 'set_brightness'
 }
