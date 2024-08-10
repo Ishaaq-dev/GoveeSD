@@ -5,5 +5,5 @@ import { Device } from "../interfaces/responses";
 
 export async function setBrightness(value: number, device: Device) {
     const requestObj = generate(device, value, CAPABILITY.SET_BRIGHTNESS);
-    const response = await axiosClient.post(URLS.POST.DEVICE_CONTROL, requestObj);
+    return await axiosClient.post(URLS.POST.DEVICE_CONTROL, requestObj);
 }
