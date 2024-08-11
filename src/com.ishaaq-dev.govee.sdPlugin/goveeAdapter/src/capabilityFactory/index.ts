@@ -1,6 +1,7 @@
 import { CAPABILITY } from "../../constants";
 import { Device } from "../interfaces/responses";
 import { createSetBrightnessRequest } from "./methods/brightness";
+import { createSetTemperatureRequest } from "./methods/temperature";
 import { createToggleDeviceRequest } from "./methods/toggle";
 
 export function generate(device: Device, value: string | number, capability: string) {
@@ -9,6 +10,8 @@ export function generate(device: Device, value: string | number, capability: str
             return createToggleDeviceRequest(device, Number(value));
         case CAPABILITY.SET_BRIGHTNESS:
             return createSetBrightnessRequest(device, Number(value));
+        case CAPABILITY.SET_TEMPERATURE:
+            return createSetTemperatureRequest(device, Number(value));
         default:
             throw new Error(`Capability: ${capability} not supported`);
     }

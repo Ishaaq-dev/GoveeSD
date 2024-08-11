@@ -14,5 +14,6 @@ export const URLS = {
 
 export const CAPABILITY = {
   TOGGLE_ON_OFF: 'on_off',
-  SET_BRIGHTNESS: 'set_brightness'
+  SET_BRIGHTNESS: 'set_brightness',
+  SET_TEMPERATURE: 'set_temperature'
 }
