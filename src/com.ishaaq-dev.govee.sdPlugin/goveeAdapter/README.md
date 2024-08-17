@@ -1,1 +1,1 @@
-Solutions to LeetCode Medium problems
+A project to handle communcation with Govee API
